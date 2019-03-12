@@ -1,0 +1,67 @@
+Git Assignment 1
+
+Install GIT & make sure it is added into PATH.
+Use GIT as local VCS. Steps to follow:
+1.	Create a directory ‘project_dir’ & cd to ‘project_dir’. 
+Ans.	git init project_dir
+	 cd project_dir
+	
+2.	Initialize git version database. (git init)
+Ans.	 git init
+
+3.	Create a new file index.html.
+Ans.	 touch index.html
+
+4.	Check the git status. You should find index.html as untracked file.
+Ans.	git status
+
+5.	Stage the index.html file.
+Ans.	git add index.html
+
+6.	Commit index.html
+Ans.	git commit -m "1st commit"
+
+7.	Make few changes in index.html & create a new file info.txt file.
+Ans.	touch info.txt
+
+8.	Check git status. You should find index.html & info.txt as untracked files.
+Ans.	git status
+
+9.	Configure GIT to ignore all txt files.
+Ans.	touch .gitignore
+
+10.	Again check the git status. You should find only index.html as untracked file.
+Ans.	git status
+
+11.	State & commit index.html
+Ans.	git add index.html
+	git commit -m "1st commit"
+		
+12.	Log all your comments so far.
+Ans.	git log
+
+13.	Make some changes in index.html.
+Ans.	git status
+	
+14.	Revert the change made in the previous step using git command.
+Ans.	git checkout -- index.html
+
+15.	Again change index.html.
+Ans.	get status
+
+16.	Stage index.html
+Ans.	 git add index.html
+
+17.	Revert back the last stage.
+Ans.	git reset index.html
+
+18.	Rename ‘add’ command to ‘my-add’.
+Ans.	git config --global alias.my-add add
+
+19.	Using my_add command Stage index.html again & commit the changes.
+Ans.	git my-add index.html
+	git commit -m "commit"
+
+20.	Revert the last commit.
+Ans.	git revert 20cffe6d8dfd7faba5558c85c941d9005088b775
+
